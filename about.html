@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<title>Question - 2-animate-ng-show-production</title>
+<link href="animations.css" rel="stylesheet" type="text/css">
+<body ng-app="myApp" ng-controller="studentController">
+    <div ng-init="checked = false">
+
+        <label>
+            <input type="checkbox" ng-model="checked" />
+            what is ng-cloak?<br>
+            Difference between ngroute and ui-router<br>
+
+        </label>
+        <div class="content-area sample-show-hide" ng-show="checked">
+            The ng-cloak directive prevents the document from showing unfinished AngularJS code while AngularJS is being loaded.<br>
+
+            AngularJS applications can make HTML documents flicker when the application is being loaded, showing the AngularJS code for a second, before all code are executed. <br>
+            Use the ng-cloak directive to prevent this.<br><br>
+
+            ngRoute is developed by the Angular team where as ui-router is a 3rd-party module<br>
+
+            ng-route implements routing based on the route URL where as ui-router implements routing based on the state of the application<br>
+
+            ui-router provides everything that the ngRoute module provides plus the following additional features.<br>
+            These additional features are very useful for larger applications.<br>
+            Nested states and views <br>
+            Multiple named views <br>
+
+
+
+        </div>
+
+
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="script2.js"></script>
+
+</body>
+</html>
