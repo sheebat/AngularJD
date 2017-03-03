@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+    <title>Question - 8-expressions in Angular</title>
+    <link href="animations.css" rel="stylesheet" type="text/css">
+
+
+
+</head>
+<body>
+<div ng-app="myApp" ng-controller="q8Controller">
+
+
+    <div ng-init="checked = false">
+
+        <label>
+            <input type="checkbox" ng-model="checked"  />
+            What are AngularJS Expressions?<br>
+What is the difference between AngularJS Expressions vs. JavaScript Expressions?><br><br>
+
+
+What would be the output of the following:<br>
+            ng-bind = "1 == 1"<br>
+            ng-bind =  "{ name: 'David', age : '30' }.name"<br>
+            ng-bind = "['Mark', 'David', 'Sara'][2]"  <br><br>
+   </label>
+        <div class="content-area sample-show-hide" ng-show="checked">
+           AngularJS binds data to HTML using Expressions.<br>
+            AngularJS expressions can be written inside double braces: {{ expression }}.<br>
+
+            AngularJS expressions can also be written inside a directive: ng-bind="expression".<br>
+
+            AngularJS will resolve the expression, and return the result exactly where the expression is written.<br>
+
+            AngularJS expressions are much like JavaScript expressions: They can contain literals, operators, and variables.<br>
+
+            Example ng-bing= "5 + 5" or ng-bind="firstName + " " + lastName"<br><br><br><br>
+
+                <br>AngularJS Expressions vs. JavaScript Expressions<br>
+                    Like JavaScript expressions, AngularJS expressions can contain literals, operators, and variables.<br>
+
+                    Unlike JavaScript expressions, AngularJS expressions can be written inside HTML.<br>
+
+                    AngularJS expressions do not support conditionals, loops, and exceptions, while JavaScript expressions do.<br>
+
+                    AngularJS expressions support filters, while JavaScript expressions do not.<br>
+
+            <br>
+
+            <br> ng-bind = "1 == 1" - Evaluates to true<br>
+            ng-bind =  "{ name: 'David', age : '30' }.name" - Returns the name property value<br>
+            ng-bind = "['Mark', 'David', 'Sara'][2]" - Returns the 2nd element from the array<br>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="script6.js"></script>
+
+
+
+</body>
+</html>
