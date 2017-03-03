@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<title>Question - 2-animate-ng-show-production</title>
+<link href="animations.css" rel="stylesheet" type="text/css">
+<body>
+
+
+<div ng-app="myApp" ng-controller="myController">
+    <div ng-init="checked = false">
+
+        <label>
+            <input type="checkbox" ng-model="checked" />
+            what is ng-disabled?<br>
+            ng-animate<br>
+        </label>
+        <div class="content-area sample-show-hide" ng-show="checked">
+            The ng-disabled directive sets the disabled attribute of a form field (input, select, or textarea).<br>
+
+            The form field will be disabled if the expression inside the ng-disabled attribute returns true.<br>
+
+            The ng-disabled directive is necessary to be able to shift the value between true and false.<br>
+            In HTML, you cannot set the disabled attribute to false (the presence of the disabled attribute makes the element disabled, regardless of its value).<br>
+
+            Syntax<br>
+            input ng-disabled="expression"<br>
+            Supported by input, select, and textarea elements.<br>
+            <br><br>
+            AngularJS provides animated transitions, with help from CSS.<br>
+            What is an Animation?<br>
+            An animation is when the transformation of an HTML element gives you an illusion of motion.<br>
+            Example:<br>
+            script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"
+            Check the checkbox to hide the DIV:<br>
+
+            body ng-app="ngAnimate"<br>
+
+            Hide the DIV: input type="checkbox" ng-model="myCheck"<br>
+
+            ng-hide="myCheck"<br>
+            script<br>
+                var app = angular.module('myApp', ['ngAnimate'])<br>
+            script<br>
+            What Does ngAnimate Do?<br>
+            The ngAnimate module adds and removes classes.<br>
+
+            The ngAnimate module does not animate your HTML elements, but when ngAnimate notice certain events, like hide or show of an HTML element, the element gets some pre-defined classes which can be used to make animations.<br>
+
+            The directives in AngularJS who add/remove classes are:<br>
+
+            ng-show<br>
+            ng-hide<br>
+            ng-class<br>
+            ng-view<br>
+            ng-include<br>
+            ng-repeat<br>
+            ng-if<br>
+            ng-switch<br>
+        </div>
+
+
+    </div>
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="script2.js"></script>
+
+</body>
+</html>
