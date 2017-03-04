@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+    <title>Question - 9-filters in Angular</title>
+    <link href="animations.css" rel="stylesheet" type="text/css">
+
+
+
+</head>
+<body>
+<div ng-app="myApp" ng-controller="q9Controller">
+
+
+    <div ng-init="checked = false">
+
+        <label>
+            <input type="checkbox" ng-model="checked">
+            What are AngularJS Filters?<br>
+            How can we format, sort and filter data in the tabular format as follows?<br>
+<img src="ng-filter.PNG">
+        </label>
+        <div class="content-area sample-show-hide" ng-show="checked">
+            Filters in angular can do 3 different things<br>
+            Format data<br>
+            Sort data<br>
+            Filter data<br>
+
+            Filters can be used with a binding expression or a directive<br><br>
+
+            To apply a filter use pipe (|) character<br>
+
+            Syntax : ng-bind= "expression | filterName:parameter"<br><br>
+
+            Angular filters for formatting data<br>
+            lowercase - Formats all characters to lowercase<br>
+            uppercase - Formats all characters to uppercase<br>
+            number - Formats a number as text. Includes comma as thousands separator and the number of decimal places can be specified<br>
+            currency - Formats a number as a currency. $ is default. Custom currency and decimal places can be specified<br>
+            date - Formats date to a string based on the requested format<br><br>
+
+            Angular Date formats<br>
+            Format Result<br>
+            yyyy 4 digit year. Exampe 1998<br>
+            yy 2 digit year. Example 1998 = 98<br>
+            MMMM January-December<br>
+            MMM Jan-Dec<br>
+            MM 01-12<br>
+            M 1-12 (No leading ZEROS)<br>
+            dd 01 - 31<br>
+            d 1 - 31 (No leading ZEROS)<br>
+            limitTo filter : Can be used to limit the number of rows or characters in a string.<br><br>
+
+            Syntax :  expression | limitTo : limit : begin<br>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="script6.js"></script>
+
+</body>
+</html>
