@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+    <title>Question - 5-animate-ng-show-production</title>
+    <link href="animations.css" rel="stylesheet" type="text/css">
+
+
+
+</head>
+<body>
+<div ng-app="myApp" ng-controller="q5Controller">
+
+
+    <div ng-init="checked = false">
+
+        <label>
+            <input type="checkbox" ng-model="checked"  />
+
+            What would the following code in AngularJS display?<br>
+            Using the example explain how MVC and two way binding works? <br>How would you make your page HTML valid?<br><br>
+
+            <br>
+            <br>
+            Name: input type="text" ng-model="name"<br>
+            p ng-bind="name"<br>
+        </label>
+        <div class="content-area sample-show-hide" ng-show="checked">
+
+
+            Input something in the input box:<br>
+
+            Name:john<br>
+
+            john<br><br>
+
+            Two way data binding in AngularJS.<br> This is a very useful directive in angular ng-model.<br>
+            When the model changes the view is automatically updated. This is achieved using the data binding expression in the view.<br>
+            ng-model directive can be used with the following 3 html elements<br>
+            input<br>
+            select<br>
+            textarea<br>
+            AngularJS starts automatically when the web page has loaded.<br>
+
+
+
+            The ng-model directive binds the value of the input field to the application variable name.<br>
+
+            The ng-bind directive binds the innerHTML of the <p> element to the application variable name.<br>
+
+            The ng-init directive initializes AngularJS application variables.<br>
+
+            You can use data-ng-, instead of ng-, if you want to make your page HTML valid.<br>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="script3.js"></script>
+
+
+
+</body>
+</html>
