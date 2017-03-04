@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+    <title>Question - 4-animate-ng-show-production</title>
+    <link href="animations.css" rel="stylesheet" type="text/css">
+
+
+
+</head>
+<body>
+<div ng-app="myApp" ng-controller="q4Controller">
+    <div ng-init="checked = false">
+
+        <label>
+            <input type="checkbox" ng-model="checked"  />
+            What kinds of apps are a good fit for AngularJS.
+        </label>
+        <div class="content-area sample-show-hide" ng-show="checked">
+            AngularJS simplifies application development by presenting a higher level of abstraction to the developer.
+            Like any abstraction, it comes at a cost of flexibility.
+            In other words, not every app is a good fit for AngularJS.
+            AngularJS was built with the CRUD application in mind.
+            Luckily CRUD applications represent the majority of web applications.
+            To understand what AngularJS is good at, though, it helps to understand when an app is not a good fit for AngularJS.
+
+            Games and GUI editors are examples of applications with intensive and tricky DOM manipulation.
+            These kinds of apps are different from CRUD apps, and as a result are probably not a good fit for AngularJS. In these cases it may be better to use a library with a lower level of abstraction, such as jQuery.
+
+        </div>
+
+
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="script3.js"></script>
+
+
+
+</body>
+</html>
