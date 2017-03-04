@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="script12.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body ng-app="myModule">
+<div ng-app="myApp" ng-controller="q5Controller">
+
+
+    <div ng-init="checked = false">
+
+        <label>
+            <input type="checkbox" ng-model="checked"  />
+
+            Explain ng-include directive in AngularJS?
+        </label>
+        <div class="content-area sample-show-hide" ng-show="checked">
+
+
+            ng-include directive is used to embed an HTML page into another HTML page.
+            This technique is extremely useful when you want to reuse a specific view in multiple pages in your application.
+
+
+            The value of ng-include directive can be the name of the HTML page that you want to reuse or a property on the $scope object that points to the reusable HTML page.
+
+
+        </div>
+
+
+    </div>
+</div>
+
+
+</div>
+<br>
+<br>
+<hr>
+<div ng-controller="myController" class="container">
+    Select View :
+    <select ng-model="employeeView">
+        <option value="employeeTable.html">Table</option>
+        <option value="employeeList.html">List</option>
+    </select>
+    <br /><br />
+    <div ng-include="employeeView">
+    </div>
+</div>
+</body>
+</html>
