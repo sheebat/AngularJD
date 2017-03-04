@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+    <title>Question - 6-ng-switch-show-production</title>
+    <link href="animations.css" rel="stylesheet" type="text/css">
+
+
+
+</head>
+<body ng-app="">
+Please explain:
+<select ng-model="myVar">
+    <option value="ngapp">ng-app
+    <option value="ngmodel">ng-model
+    <option value="ngbind">ng-bind
+    <option value="nginit">ng-init
+    <option value="ngswitch">ng-switch
+</select>
+
+<hr>
+<div ng-switch="myVar">
+    <div ng-switch-when="ngapp">
+        <h1>ng-app</h1>
+        <p>The ng-app directive tells AngularJS that the div element is the "owner" of an AngularJS application.</p>
+    </div>
+    <div ng-switch-when="ngmodel">
+        <h1>ng-model</h1>
+        <p>The ng-model directive binds the value of the input field to the application variable name.</p>
+    </div>
+    <div ng-switch-when="ngbind">
+        <h1>ng-bind</h1>
+        <p>The ng-bind directive binds the innerHTML of the p element to the application variable name.</p>
+    </div>
+    <div ng-switch-when="nginit">
+        <h1>ng-init</h1>
+        <p>The ng-init directive initializes AngularJS application variables.</p>
+    </div>
+    <div ng-switch-when="ng-switch">
+        <h1>ng-init</h1>
+        <p>The ng-switch directive lets you hide/show HTML elements depending on an expression.
+
+            Child elements with the ng-switch-when directive will be displayed if it gets a match, otherwise the element, and its children will be removed.
+
+            You can also define a default section, by using the ng-switch-default directive, to show a section if non of the other sections get a match.</p>
+    </div>
+    <div ng-switch-default>
+        <h1>Switch</h1>
+        <p>The ng-switch directive hides and shows HTML sections depending on a certain value.</p>
+    </div>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="script6.js"></script>
+
+
+
+</body>
+</html>
